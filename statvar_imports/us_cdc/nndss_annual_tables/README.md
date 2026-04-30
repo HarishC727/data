@@ -34,4 +34,6 @@ This dataset is available for public use, license is available at https://www.cd
    python3 ../../../tools/statvar_importer/stat_var_processor.py --input_data='input_files/region_state/NNDSS_Annual_Summary_Data_2023.csv' --pv_map=regional_state_pvmap.csv --config_file=regional_state_metadata.csv --output_path=output/nndss_regional_state --existing_statvar_mcf=gs://unresolved_mcf/scripts/statvar/stat_vars.mcf |& tee check.log
 ``` 
 
- 
+```bash
+   python3 ../../../tools/statvar_importer/stat_var_processor.py --input_data='input_files/{age,race etc}/NNDSS_Annual_Summary_Data_2023.csv' --pv_map=measles_pvmap.csv --config_file=measles_metadata.csv --output_path=output/nndss_measles_{age,raceetc} --existing_statvar_mcf=gs://unresolved_mcf/scripts/statvar/stat_vars.mcf |& tee check.log
+```
